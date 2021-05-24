@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp"
+        android:gravity="center"
+        android:theme="@style/Theme.Materials">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:alpha="0.2"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/colorSecondaryVariant"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="Update Road Defect"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/custom_editTextLayout"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:hint="Length (cm)">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/length"
+                        android:inputType="numberDecimal"
+                        style="@style/custom_editText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/custom_editTextLayout"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:hint="Width (cm)">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/width"
+                        android:inputType="numberDecimal"
+                        style="@style/custom_editText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/width_text"
+                style="@style/custom_editTextLayout"
+                android:hint="Depth (cm)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/depth"
+                    android:inputType="numberDecimal"
+                    style="@style/custom_editText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="Short Description"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/custom_editTextLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="38dp"
+                    android:inputType="textMultiLine"
+                    android:padding="3dp"
+                    android:gravity="top"
+                    android:id="@+id/short_description"
+                    style="@style/custom_editText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="Description"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/custom_editTextLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="56dp"
+                    android:inputType="textMultiLine"
+                    android:padding="3dp"
+                    android:gravity="top"
+                    android:id="@+id/description"
+                    style="@style/custom_editText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="Select Severity"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:checkedButton="@+id/low"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    style="@style/custom_radio"
+                    android:id="@+id/low"
+                    android:text="Low"/>
+                <RadioButton
+                    style="@style/custom_radio"
+                    android:id="@+id/medium"
+                    android:text="Medium"/>
+                <RadioButton
+                    style="@style/custom_radio"
+                    android:id="@+id/high"
+                    android:text="High"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_marginTop="14dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:paddingLeft="40dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorSecondaryVariant"
+                android:text="Update Record"/>
+
+            <Button
+                android:id="@+id/btn_change_status"
+                android:layout_marginTop="3dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:paddingLeft="40dp"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:text="Update Status to Corrected"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

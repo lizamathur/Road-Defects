@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="12dp">
+
+
+    <ImageView
+        android:id="@+id/defectImg_f"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="22dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/defectType_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/heading"/>
+
+            <TextView
+                android:id="@+id/subType_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - Longitudinal"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/subtext"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/severity_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Severity: Medium"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/subtext"/>
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | Corrected"
+                android:textSize="14dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/subtext" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/length_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length: 65.76 cm"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/subtext"/>
+
+        <TextView
+            android:id="@+id/width_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Width: 23.56 cm"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/subtext"/>
+
+        <TextView
+            android:id="@+id/depth_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Depth: 13.33 cm"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/subtext"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showLocation"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_location"
+            android:tint="@color/colorSecondary"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

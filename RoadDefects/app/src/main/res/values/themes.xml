@@ -1,0 +1,87 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RoadDefects" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorAccent">#42cbc9</item>
+        <item name="colorPrimary">#4fa2d2</item>
+        <item name="colorPrimaryVariant">#4878ae</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#5b538a</item>
+        <item name="colorSecondaryVariant">#524365</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+<!--        <item name="android:windowTranslucentNavigation">true</item>-->
+        <item name="android:navigationBarColor">@color/colorSecondaryVariant</item>
+    </style>
+
+    <style name="Theme.Materials" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorAccent">#42cbc9</item>
+        <item name="colorPrimary">#4fa2d2</item>
+        <item name="colorPrimaryVariant">#4878ae</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#5b538a</item>
+        <item name="colorSecondaryVariant">#524365</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--        <item name="android:windowTranslucentNavigation">true</item>-->
+        <item name="android:navigationBarColor">@color/colorSecondaryVariant</item>
+    </style>
+
+    <style name="Theme.Dropdown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="custom_dropdown" parent="Theme.Dropdown">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="startIconTint">@color/white</item>
+        <item name="endIconTint">@color/white</item>
+    </style>
+
+    <style name="custom_autocomplete">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:enabled">false</item>
+        <item name="android:inputType">none</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.EditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="hintTextColor">#fff</item>
+    </style>
+
+    <style name="custom_editTextLayout" parent="Theme.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="custom_editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="custom_radio">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:buttonTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
